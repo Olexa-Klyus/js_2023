@@ -109,7 +109,7 @@ if (flat >= 1 && flat <= 20) {
 // якщо змінна не рівна 10 - тоді НЕВІРНО
 document.write("<br>")
 
-let number = +prompt("Number is:");
+let number = +prompt("Ваше число:");
 number === 10 ? document.write("ВІРНО") : document.write("НЕВІРНО");
 
 
@@ -127,7 +127,7 @@ temp >= 10 && temp <= 22 ? document.write("Ми йдемо вчитися") : do
 //   якщо число не підходить тоді  вивести Повідомлення - що число не вірне ... .
 document.write("<br>")
 
-let numberX = +prompt("Your number is:")
+let numberX = +prompt("Ваше число:")
 switch (numberX) {
   case 1:
     document.write("Ваш приз — авто!");
