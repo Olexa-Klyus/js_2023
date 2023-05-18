@@ -115,7 +115,7 @@ console.log(durationMoreThan5);
 
 coursesAndDurationArray = coursesAndDurationArray.map(
   (value, index) => {
-    value.id = index;
+    value.id = index + 1;
     return value;
   });
 console.log(coursesAndDurationArray);
