@@ -40,6 +40,22 @@ document.write(firstToUpper("hhhhh"));
 document.write('<br>')
 
 
+// - Дано список імен.
+let n1 = 'Harry..Potter'
+let n2 = 'Ron---Whisley'
+let n3 = 'Hermione__Granger'
+// Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
+// let n1 = 'Harry Potter'
+// let n2 = 'Ron Whisley'
+// let n3 = 'Hermione Granger'
+
+let CorrectName = (name) => (name.replaceAll(".", " ").replaceAll("-", " ").replaceAll("_", " ").replaceAll("   ", " ").replaceAll("  ", " "));
+
+document.write(CorrectName(n1), "<br>");
+document.write(CorrectName(n2), "<br>");
+document.write(CorrectName(n3), "<br>");
+
+
 //   - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
 
 let randomNum100 = (n) => {
