@@ -10,6 +10,7 @@ div.classList.add("wrap", "collapse", "alpha", "beta");
 div.style.backgroundColor = "white";
 div.style.color = "#888888";
 div.style.fontSize = "25px";
+div.innerText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem quaerat quod sed sunt voluptatem."
 
 document.body.append(div);
 
@@ -30,6 +31,7 @@ for (const item of arr) {
   li.innerText = item;
   ul.appendChild(li);
 }
+document.body.appendChild(ul);
 
 
 // - Є масив
@@ -47,11 +49,12 @@ let coursesAndDurationArray = [
 
 for (const element of coursesAndDurationArray) {
   let div = document.createElement("div");
-  for (const key in element) {
-    let li = document.createElement("li");
-    li.innerText = `${key}: ${element[key]}`;
-    div.appendChild(li);
-  }
+  let li = document.createElement("li");
+  div.appendChild(li);
+  li.innerText = `${element.title}`;
+  let p = document.createElement("p");
+  p.innerText = `month duration: ${element.monthDuration}`;
+  li.appendChild(p);
   document.body.appendChild(div);
 }
 
@@ -231,7 +234,7 @@ for (const course of coursesArray) {
   title.classList.add("characteristic", "title");
   title.innerText = `${course.title}`;
 
-  let monthDuration =  document.createElement("div");
+  let monthDuration = document.createElement("div");
   monthDuration.classList.add("characteristic", "monthDuration");
   monthDuration.innerText = `Month duration: ${course.monthDuration}`;
 
