@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  width: 100vw;
+  font-family: Roboto, sans-serif;
+}
+
+.wrap {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post_details {
+  width: 50%;
+  background-color: #E1D9E4;
+  border: 40px solid #E1D9E4;
+  border-radius: 0 0 40px 0;
+}
+
+.post_title {
+  text-align: center;
+}
+
+.post_userId, .post_id {
+  font-size: small;
+}
+
+.comments_wrap {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.comment {
+  background-color: white;
+  width: 20%;
+  padding: 5px 5px 5px 2%;
+  margin-bottom: 1%;
+  border-left: 4px solid #917790;
+}
