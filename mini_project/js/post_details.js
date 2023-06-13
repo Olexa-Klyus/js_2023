@@ -5,6 +5,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`,)
   .then((response) => response.json())
   .then((post) => {
     console.log(post)
+    console.log(post)
     let post_block = document.getElementsByClassName("post_details")[0];
 
     let userId_block = document.createElement("div");

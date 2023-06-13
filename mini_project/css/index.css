@@ -29,7 +29,7 @@ h1 {
   align-content: center;
   text-align: center;
   align-items: center;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
 }
@@ -42,4 +42,6 @@ h1 {
   color: black;
   font-size: 15px;
   font-weight: normal;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
 }

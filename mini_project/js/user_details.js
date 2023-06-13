@@ -37,11 +37,7 @@ function recursiveUserConstructor(obj, parent) {
 
 function button() {
   const button = document.getElementsByClassName("posts_show_button")[0];
-  // let button = document.createElement("button");
   button.innerText = "posts of current user";
-  // button.classList.add("posts_show_button");
-  // const wrap = document.getElementsByClassName("wrap")[0];
-  // wrap.appendChild(button);
 
   button.onclick = () => {
     fetch(`https://jsonplaceholder.typicode.com/users/${userId}/posts`)
@@ -52,7 +48,7 @@ function button() {
           let p = document.createElement("p");
           p.classList.add("user_post_preview");
           let postId = post.id;
-          p.innerHTML = `<a href='/js____hw/mini_project/post_details.html/?postId=${postId}'>${post.title}</a>`;
+          p.innerHTML = `<a href='/js____hw/mini_project/html/post_details.html/?postId=${postId}'>${post.title}</a>`;
           posts_block.appendChild(p);
         }
       })
