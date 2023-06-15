@@ -1,0 +1,11 @@
+@media screen and (max-width: 650px) {
+  .user_preview {
+    width: 55%;
+    min-width: 200px;
+    min-height: 160px;
+  }
+
+  .user_preview_button {
+    min-height: fit-content;
+  }
+}

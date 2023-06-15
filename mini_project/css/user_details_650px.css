@@ -1,0 +1,17 @@
+@media screen and (max-width: 650px) {
+  .user_details {
+    min-width: 500px;
+  }
+
+  .posts_show_button {
+    min-width: 200px;
+  }
+
+  .posts_block {
+    flex-direction: column;
+  }
+
+  .user_post_preview {
+    width: 80%;
+  }
+}

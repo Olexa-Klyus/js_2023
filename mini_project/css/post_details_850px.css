@@ -1,0 +1,13 @@
+@media screen and (max-width: 850px) {
+  .post_details {
+    min-width: 300px;
+  }
+
+  .comments_wrap {
+    flex-direction: column;
+  }
+
+  .comment {
+    width: 100%;
+  }
+}

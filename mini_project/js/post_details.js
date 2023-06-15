@@ -4,8 +4,6 @@ postId = url.searchParams.get("postId")
 fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`,)
   .then((response) => response.json())
   .then((post) => {
-    console.log(post)
-    console.log(post)
     let post_block = document.getElementsByClassName("post_details")[0];
 
     let userId_block = document.createElement("div");
@@ -46,6 +44,16 @@ let showComments = () => {
           if (key === "body") {
             item_x.innerHTML = `<br><b>«${comment[key]}»</b>`;
             item_x.classList.add("comment_text");
+          } else if (key === "postId") {
+          } else if (key === "id") {
+            item_x.innerHTML = `<b>comment ${key}:</b> ${comment[key]}`;
+            item_x.classList.add("comment_id");
+          } else if (key === "name") {
+            item_x.innerHTML = `<b>${key}:</b> ${comment[key]}`;
+            item_x.classList.add("comment_name");
+          } else if (key === "email") {
+            item_x.innerHTML = `<b>${key}:</b> ${comment[key]}`;
+            item_x.classList.add("comment_email");
           } else {
             item_x.innerHTML = `<b>${key}:</b> ${comment[key]}`
           }
